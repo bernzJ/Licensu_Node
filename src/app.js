@@ -22,3 +22,10 @@ https.globalAgent.options.ca = [];
 for (const ca of trustedCa) {
   https.globalAgent.options.ca.push(fs.readFileSync(ca));
 }
+
+let options = {
+    hostname: 'localhost', 
+    port: 6969, 
+    path: '/', 
+    method: 'GET', 
+}
